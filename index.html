@@ -10,12 +10,12 @@
 <body style="transition: all 2000ms ease-in;">
     <div class="container">
         <div class="row justify-content-center p-3">
-            <input type="text" id="userZipCode" placeholder="XXXX" pattern="[0-9]{5}">
+            <input type="text" id="userZipCode" placeholder="XXXXX" pattern="[0-9]{5}">
             <div id="alert" class="alert alert-danger" role="alert" style="display: none;">
                 Sorry! Try again homie!
             </div>
         </div>
-        <div id="weatherContainer" style="opacity: 0; transition: all 500ms ease;">
+        <div id="weatherContainer">
             <div class="row justify-content-center p-3">
                 <div id="city" class="text-center"></div>
             </div> 
@@ -27,8 +27,10 @@
                 <div class="col text-center"><img src="" alt="" id="currentIcon"></div>
             </div>
         </div>
+         <button id="myButton">CHECK UNDERSTANDING</button>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="mvc-main.js"></script>
 </body>
 </html>
