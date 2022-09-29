@@ -1,4 +1,4 @@
-const API_URL = "https://api.openweathermap.org/data/3.0/onecall";
+const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 const APP_ID = "081f509558a6fc29897d26c964840013";
 
 // Weather state object
@@ -67,14 +67,12 @@ const getWeatherByZipcode = async (zipcode) => {
 
         let options = {
             params: {
-                lat: 36.4761,
-                lon: -119.4432,
+                zip: zipcode,
                 appid: APP_ID,
             }
         }
 
         let response = await axios.get(API_URL, options)
-        console.log(response.data);
         
         if (response.data) {
             return response.data;
