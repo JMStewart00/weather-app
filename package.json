@@ -1,5 +1,13 @@
 {
+  "homepage": "http://jmstewart00.github.io/weather-app",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "axios": "^0.26.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
